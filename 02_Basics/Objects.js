@@ -1,7 +1,7 @@
 //******************************Objects****************************
 
 //We can declare the JS in two way 1)literals 2)Constructor
-//here is the term called sinleton : when we make the constructor object it's make as the singleton(ek hi object hai.)
+//here is the term called singleton : when we make the constructor object it's make as the singleton(ek hi object hai.)
 //when we make the object by using literals no singleton is form while in constructor it happen.
 //-------------------------------------------------------------------------------------------------------------------
 
@@ -28,7 +28,7 @@ const JsUser = {
 JsUser.email = "vishal@gpt.com";
 //Object.freeze(JsUser);//by using this you freeze your object mean's no changes occurs after freezing the object.
 JsUser.email = "vishaltiwati@gamil.com";
-//console.log(JsUser);
+// console.log(JsUser);
 
 JsUser.greeting = function(){
     console.log("hello Js user ")

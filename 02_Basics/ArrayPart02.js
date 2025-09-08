@@ -4,8 +4,8 @@ const marvel_heros = ['IronMan','Captain America','Hukl'];
 const dc_heros = ['SuperMAn','BatMan','flash'];
 
 // marvel_heros.push(dc_heros);
-//console.log(marvel_heros.push(dc_heros));//so here the output is 5 couse it created the nested array,so agins of it return the length of array which is 5
-//console.log(marvel_heros);//output:['IronMan','Captain America',Hukl',[ 'SuperMAn', 'BatMan', 'flash' ]]
+//console.log(marvel_heros.push(dc_heros));//so here the output is 5 cause it created the nested array,so agins of it return the length of array which is 5
+// console.log(marvel_heros);//output:['IronMan','Captain America',Hukl',[ 'SuperMAn', 'BatMan', 'flash' ]]
 //---------------------------------------------------------------------------------------------------------------
 
 //Concat Operator:
@@ -27,7 +27,7 @@ let arr2 = arr.flat(Infinity);
 //------------------------------------------------------------------------------------------------
 
 //Convert the elements,string,objects into Array by doing this:
- console.log(Array.isArray("vishal"));//here you asking king the que is the given type is array or not .ANS:false
+ console.log(Array.isArray("vishal"));//here you asking the que.is the given type is array or not .ANS:false
  console.log(Array.from("vishal"));//this convert your string into array:[ 'v', 'i', 's', 'h', 'a', 'l' ]
  let l =200;
  let K= 500;

@@ -1,5 +1,5 @@
 // What is memory and its types and
-//Stack(Primitive are use this memory ) , Heap(Non-primitive are use this memory)
+//Stack(Primitive data-types are used this memory ) , Heap(Non-primitive data-types are used this memory)
 //Stack memory returns the copy of variable 
 //heap memory returns the reference(original value)
  let myName = "vishaltiwari";

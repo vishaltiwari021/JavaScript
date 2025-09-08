@@ -59,7 +59,7 @@ switch (month){
 
 const userEmain ="vihsal@ gamil.com";
 if(userEmain){
-    console.log("got thre useremail");
+    // console.log("got there useremail");
 }else{
     console.log("do not got useremail");
 }
@@ -79,7 +79,7 @@ if(userEmain.length===0){
 const emptyObject = {}
 
 if(Object.keys(emptyObject).length === 0){
-    console.log("array is empty")
+    // console.log("array is empty")
 }
 // *******************************************************************************************************
  // Nullish Coalescing Operator (??) all the thing are around between(null and undefine):

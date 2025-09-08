@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Dic=scursion on Selectors and other</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script> 
+//ADD kiya hai value ko
+//this is regular way:
+     function addlanguage(langName){
+    const li = document.createElement('li');
+    li.innerHTML = `${langName}`;
+    document.querySelector('.language').appendChild(li);
+}
+//this is opimise way :
+function addopitiLanguage(langName){
+    const li = document.createElement('li');
+    li.appendChild(document.createTextNode(langName))
+    document.querySelector('.language').appendChild(li)
+}
+addlanguage("python")
+addopitiLanguage("java")
+//-------------------------------------------------------
+//Edit:
+
+const secondlang =document.querySelector('li:nth-child(2)');
+// secondlang.innerHTML = "mojo"
+const newli = document.createElement('li')
+newli.textContent = "ruby"
+secondlang.replaceWith(newli)
+//-----------------------------
+// const firstlang = document.querySelector('li:first-child');
+// firstlang.innerHTML = '<li>typescript</li>'
+//----------------------------------------------------------
+
+//remove:
+const lastlang = document.querySelector('li:last-child')
+lastlang.remove()
+
+</script>
+</html>

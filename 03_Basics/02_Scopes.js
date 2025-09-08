@@ -1,8 +1,8 @@
 //*************************************Scopes***************************************************
 
-//{} thi curly braces are the scope
+//{} this curly braces are the scope
 
-// var a =3; generaly we are not using the var in the codeing 
+// var a =3; generaly we are not using the var in the JS
 let a=5;// global scope
 const y = 6;//global scope
 

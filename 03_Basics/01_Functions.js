@@ -28,7 +28,7 @@ const result  = addTwoNumbers(2,4);//in(arguments1,arguments2)
 // console.log(result)
 //---------------------------------------------------------------------------------
 
-function loginUserMessage(username = "hera"){
+function loginUserMessage(username = "hera"){//default value
     return `${username} just logged in`
 }
 //console.log(loginUserMessage("vishal"))//vishal just logged in
@@ -48,7 +48,7 @@ function loginUserMessage(username = "hera"){
 
 //*******************************************************************************************************
 
-//shoping card problem: custom add's multiple item in the cart then how to tacle this
+//shoping card problem: customer add's multiple item in the cart then how to tacle this
 
 function calculateCartPrice(...num1){//rest operator
     return num1;

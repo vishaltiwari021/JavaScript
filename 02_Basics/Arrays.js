@@ -22,21 +22,21 @@ newArr.shift();//remove value of the '0 index' from the array.
 // console.log(arr.indexOf(5));
  const freshArr = arr.join()//join makes array to string. example:const fruits = ['Apple', 'Banana', 'Cherry'];
 //console.log(fruits.join(' - ')); // Output: "Apple - Banana - Cherry"
- console.log(arr)
- console.log(freshArr)
- console.log(typeof freshArr)
+//  console.log(arr)
+//  console.log(freshArr)
+//  console.log(typeof freshArr)
 
 //Slice ,Splice::
 
 // console.log(" A" , arr);
 
 const myarray = arr.slice(1,3);//exclude the first value but not last
-// console.log(myarray);
+console.log(myarray);
 
 // console.log("B ", arr);
 
 const myarr3  = arr.splice(1,3)//break the array from the provided index
-// console.log("C ",arr);
+console.log("C ",arr);
 
-// console.log(myarr3)
+console.log(myarr3)
 

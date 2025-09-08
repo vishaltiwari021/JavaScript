@@ -4,10 +4,10 @@
 
 const value =33 ;
 const newvalue = 33.78;
-let naem = "bishal";
+let name = "bishal";
 let boolean = true;
 const user_ID = null;//type =>object 
-let mail;
+let mail;//type=>undefined
 let  id = Symbol('756')   
 let  anotherid = Symbol('756') 
 console.log(id === anotherid);  //false internaly both are different 

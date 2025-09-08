@@ -1,0 +1,10 @@
+body{
+    background-color: black;
+    color: white;
+}
+.container{
+    border: 5px solid white;
+    border-radius: 15px;
+    margin: 25px 34px 25px 34px;
+    padding-left: 40%;
+}

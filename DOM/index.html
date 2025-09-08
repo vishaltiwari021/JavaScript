@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Lecture</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1  id="bg-black" class="heading">Hello World Of DOM <span style="display: none;">hello vishal</span></h1>
+        <p>Document Object Model</p>
+
+    </div>
+    <ul>
+        <li class="list">one</li>
+        <li class="list">two</li>
+        <li class="list">three</li>
+    </ul>
+<script>
+        //++++++++++++++++what happen on console are preasent here+++++++++++++++++++++++++
+const title = document.getElementById('bg-black')
+title
+{/* <h1 id=​"bg-black" class=​"heading">​…​</h1>​ */}
+title.innerHTML
+// 'Hello World Of DOM <span style="display: none;">hello vishal</span>'
+title.textContent
+// 'Hello World Of DOM hello vishal'
+title.innerText
+// 'Hello World Of DOM'
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+document.querySelector('h1')
+{/* <h1 id=​"bg-black" class=​"heading">​…​</h1>​"Hello World Of DOM "<span style=​"display:​ none;​">​hello vishal​</span>​</h1>​ */}
+document.querySelector('#bg-black')
+{/* <h1 id=​"bg-black" class=​"heading">​…​</h1>​"Hello World Of DOM "<span style=​"display:​ none;​">​hello vishal​</span>​</h1>​ */}
+document.querySelector('.content')
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+document.querySelectorAll('li')
+// NodeList(3) [li, li, li]
+const tempLi = document.querySelectorAll('li')
+tempLi
+// NodeList(3) [li, li, li]
+tempLi.style.color = "green"
+// VM5416:1 Uncaught TypeError: Cannot set properties of undefined (setting 'color')
+    // at <anonymous>:1:20
+// (anonymous) @ VM5416:1Understand this error
+tempLi[0].style.color = "green"
+'green'
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+document.getElementsByClassName('list')
+// HTMLCollection(3) [li.list, li.list, li.list]
+const temp = document.getElementsByClassName('list')
+temp
+// HTMLCollection(3) [li.list, li.list, li.list]
+Array.from(temp)
+// (3) [li.list, li.list, li.list]
+const newarray  = Array.from(temp)
+newarray
+// (3) [li.list, li.list, li.list]
+newarray.forEach((li)=>{
+    li.style.color = "yellow"
+})
+</script>
+</body>
+</html>
