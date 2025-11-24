@@ -1,10 +1,10 @@
 const score = 300;
-// console.log(score);
+// console.log(score);//300
 
 const balance = new Number(499);
-// console.log(balance);
+// console.log(balance);//[Numer:499]
 
-// console.log(balance.toString());
+// console.log(balance.toString());//499
 // console.log(balance.toFixed(2));//after decimal how many digit value display,output:499.00
 
 const simple = 23.099879;
@@ -15,7 +15,7 @@ const value = 10000000000000;
 
 //-------------------MATHS---------------------------
 
-// console.log(Math);
+// console.log(Math);//{}
 // console.log(Math.abs(-4));//convet -ve into +ve
 // console.log(Math.round(4.5));
 // console.log(Math.ceil(4.2));

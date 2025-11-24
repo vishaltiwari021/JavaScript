@@ -15,15 +15,15 @@ let valueinNumber  = Number(another);
 // ""=>false;
 //  let somevalue =33;
 //  let stringNumber = String(somevalue);
-//  console.log(stringNumber);//3
+//  console.log(stringNumber);//33
 //  console.log(typeof stringNumber);//string
  
  // *******************************OPERATIONS*****************************
 
- let str1 = "hello";
- let str2 = " vishal";
- let str3  = str1+str2;
-//  console.log(str1+str2);
+//  let str1 = "hello";
+//  let str2 = " vishal";
+//  let str3  = str1+str2;
+//  console.log(str1+str2);//hello vishal
 
  //Arthimatic Opterations:
 
@@ -37,6 +37,6 @@ let valueinNumber  = Number(another);
 
  //post amd prefix 
 
- let counter = 100;
+//  let counter = 100;
 //  console.log(++counter);
 //  console.log(counter++);

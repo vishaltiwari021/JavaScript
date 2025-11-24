@@ -2,9 +2,8 @@
 
 console.log("Starting the functions::")
 
-//function => is the keyword then sayMyName is the function name and in{} this the function defination..
-
 function sayMyName(){
+    //function => is the keyword , sayMyName is the function name,and {}are the function defination..
     console.log("hello vishal");
     console.log("hello vishal");
     console.log("hello vishal");
@@ -12,11 +11,11 @@ function sayMyName(){
     console.log("hello vishal");
     console.log("hello vishal");
 }
-//sayMyName()//this is the function execution.
+// sayMyName()//this is the function execution.
 
-// function addTwoNumbers(number1,number2){//in(parameter1,parameter2) 
-//     console.log(number1+number2)
-// }
+function addTwoNumbers(number1,number2){//in(parameter1,parameter2) 
+    console.log(number1+number2)
+}
 //------------------------------------------------------------------------------
 function addTwoNumbers(number1,number2){//in(parameter1,parameter2) 
     let result = number1+number2;
@@ -31,14 +30,14 @@ const result  = addTwoNumbers(2,4);//in(arguments1,arguments2)
 function loginUserMessage(username = "hera"){//default value
     return `${username} just logged in`
 }
-//console.log(loginUserMessage("vishal"))//vishal just logged in
-//console.log(loginUserMessage())//result will be : undefined just logged in.
-
+// console.log(loginUserMessage("vishal"))//vishal just logged in
+// console.log(loginUserMessage())//result will be : hera just logged in.
+//-------------------------------------------------------------------------------------------------
 //json formate's :
 //  1){
 //     "name ":"vishal",
 //     "age":67,
-//     "location":"afgra"
+//     "location":"agra"
 //     ...etc
 // }
 
@@ -65,7 +64,7 @@ const user ={
 function handle(anyObject){
     console.log(`Username is ${anyObject.name} and age ${anyObject.age}`)
 }
-handle(user);
+// handle(user);
 
 const newArray = [233,556,788,3345,345];
 

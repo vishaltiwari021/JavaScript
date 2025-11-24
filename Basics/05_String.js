@@ -19,6 +19,7 @@ const userName = "Tiwari-Vishal";
 // console.log(userName.slice(1,4));//iwa
 
 const userNameTwo = "   vishal   ";
+// console.log(userNameTwo.slice(0,5))
 const url = "https://vishal%22tiwari";
 console.log(userNameTwo.trim());//by using trim spaces are remove
 console.log(url.replace('%22','-'));//https://vishal-tiwari

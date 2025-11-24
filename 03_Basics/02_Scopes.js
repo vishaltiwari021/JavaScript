@@ -10,9 +10,9 @@ const y = 6;//global scope
  if(true){
     let y=8
     const a =3
-    //console.log("Inner :" , a)
+    // console.log("Inner :" , a)
  }
- //console.log("Outer :",a)
+//  console.log("Outer :",a)
  //Scopes are different in windows and nodejs:-
 
  //nested Scope
@@ -24,20 +24,20 @@ const y = 6;//global scope
             const website ="heleo.com";
             console.log(username);
         }
-        // console.log(website); this shows :ReferenceError: website is not defined
+        // console.log(website);// this shows :ReferenceError: website is not defined
         two()
     }
-    // one()
+    one()
 
 if(true){
     let username = "vishal";
         if(username==="vishal"){
-            const wensite  = "google.com"
-           // console.log(username+wensite);
+            const website  = "google.com"
+           console.log(username+website);
         }
        // console.log(wensite)// this shows :ReferenceError: website is not defined
 }
-// console.log(username) this shows error :ReferenceError: username is not defined cause this is from out of scope.
+// console.log(username) //this shows error :ReferenceError: username is not defined cause this is from out of scope.
 
 //++++++++++++++++++++++++++++Interesting++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -47,7 +47,7 @@ function addOne(num){
     return num+1;
 }
 
-console.log(addTwo(3))//this give's the error :ReferenceError: Cannot access 'addTwo' before initialization
+// console.log(addTwo(3))//this give's the error :ReferenceError: Cannot access 'addTwo' before initialization
 
 const addTwo = function(num){
     return num+2;

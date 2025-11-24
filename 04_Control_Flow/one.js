@@ -48,7 +48,7 @@ switch (month){
     case 3:
         console.log("march")
         break;
-    case 3:
+    case 4:
         console.log("april")
         break;
     default:
@@ -57,7 +57,7 @@ switch (month){
 }
 //**********************************Truthy and Falsy values***********************************
 
-const userEmain ="vihsal@ gamil.com";
+const userEmain ="vishal@gamil.com";
 if(userEmain){
     // console.log("got there useremail");
 }else{
@@ -77,9 +77,11 @@ if(userEmain.length===0){
 }
 
 const emptyObject = {}
+//console.log(emptyObject);//{}
+
 
 if(Object.keys(emptyObject).length === 0){
-    // console.log("array is empty")
+    console.log("array is empty")
 }
 // *******************************************************************************************************
  // Nullish Coalescing Operator (??) all the thing are around between(null and undefine):
@@ -87,8 +89,14 @@ if(Object.keys(emptyObject).length === 0){
 //  let val1 = 5??10//output:5
 //  let val1 = null??10//output:10
 //  let val1 = undefined??10//output:10
-//  let val1 = null??5??10//output:5
-//  console.log(val1)
+//  let val1 = undefined??null//output:null
+//  let val1 = null??undefined//output:undefined
+ let val1 = null??5??10//output:5
+ console.log(val1)
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //Terninary:
 //Condition ? true:false
+const gg=(5>4)? true:false
+console.log(gg);//true
+
+

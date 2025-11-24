@@ -11,7 +11,7 @@
  //Reference 
  let userOne ={
     name:"vishal",
-    mail:"tiwri@gmail.com",
+    mail:"tiwari@gmail.com",
  }
     
   let userTwo = userOne

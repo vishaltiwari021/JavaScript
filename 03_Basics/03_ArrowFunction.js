@@ -5,9 +5,11 @@ const user  = {
     price : 3435,
     welcomeMessage: function(){
         console.log(`${this.name}, welcome back to our site`);
-        //console.log(this)//this provide us the current context
+        // console.log(this)//this provide us the current context
     }
 }
+// console.log(user);
+
 // user.welcomeMessage()//output:-vishal, welcome back to our site
 // user.name ="tiwari"//output:-tiwari, welcome back to our site
 // user.welcomeMessage()
@@ -17,10 +19,10 @@ const user  = {
 
 // function chai(){
 //     let name = "vishal"
-//       console.log(this.name)//this shows us an : undefined. Cause we can't exces the propertie /functionality of(this) in the fucntion.
+//       console.log(this.name)//this shows us an : undefined. Cause we can't exces the properties/functionality of(this) inside the fucntion.
 // }
 // chai()
-//-----------------------------------------------------------------------------------------------------------------------
+// //-----------------------------------------------------------------------------------------------------------------------
 //Decklaration of arrow functions:-
 
 const addTwo = (num1,num2) =>{
