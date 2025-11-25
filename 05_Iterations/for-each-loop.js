@@ -2,6 +2,7 @@
 
 const arr = ["js","py","java","ml","cpp"];
 
+
 // arr.forEach( function (item) {
 //     console.log(item);
     
@@ -46,7 +47,7 @@ const myCoding = [{
 
  const object  = arr.forEach( (value) =>{
     console.log(value);
-    return value;
+    return value;//undefined
  } )
  console.log(object);
  

@@ -9,6 +9,7 @@ const course = {
 }
 
 console.log(course.price);
-//this is how the destructuring of Object............
+
+//this is how we destructuring Object............
 const {courseInstructor:instructor} = course;
 console.log(instructor);

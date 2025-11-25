@@ -6,6 +6,7 @@ const myObject ={
     game3 : "game of throns",
     game4 : "mine craft"
 }
+
 for (const key in myObject) {
     // console.log(key);//by this we get the key of object
     // console.log(myObject[key]);//by this we get he values
@@ -17,8 +18,8 @@ for (const key in myObject) {
 const arr = ["js","py","java","ml","cpp"];
 
 for (const key in arr) {
-    //console.log(key); //output:0,1,2,3,4
-   // console.log(arr[key]);//output:js,py,java,ml,cpp    
+    // console.log(key); //output:0,1,2,3,4
+//    console.log(arr[key]);//output:js,py,java,ml,cpp    
 }
 //---------------------------------------------------------------------------------------
 
@@ -31,4 +32,4 @@ for (const key in map) {
    console.log(key);   
 }
 
-//map are  not iterable
+//map are  not iterable:-

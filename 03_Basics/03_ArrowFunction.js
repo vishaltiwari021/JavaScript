@@ -5,7 +5,7 @@ const user  = {
     price : 3435,
     welcomeMessage: function(){
         console.log(`${this.name}, welcome back to our site`);
-        // console.log(this)//this provide us the current context
+        console.log(this)//this provide us the current context of object.
     }
 }
 // console.log(user);
@@ -23,7 +23,7 @@ const user  = {
 // }
 // chai()
 // //-----------------------------------------------------------------------------------------------------------------------
-//Decklaration of arrow functions:-
+//Decleration of arrow functions:-
 
 const addTwo = (num1,num2) =>{
     return num1+num2;
@@ -33,5 +33,8 @@ console.log(addTwo(5,7))
 //implicit returns arrow function:-
 
 // const addthree = (num3,num4) => (num3+num4)//here we donot need to write return..
-const addthree = (num3,num4) => ({userNmae:"vishal TIwari"})//this how we return an object in fucntion..
+const addthree = (num3,num4) => ({userName:"vishal TIwari"})//this how we return an object in fucntion..
 console.log(addthree(6,7))
+
+
+

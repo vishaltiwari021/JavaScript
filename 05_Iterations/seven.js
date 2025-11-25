@@ -2,7 +2,7 @@
 
 const number  = [1,2,3,4,5,6,7,8,9,10]
 let ans = number.map( (num) => num+10 )
-console.log(ans);//  11, 12, 13, 14, 15,16, 17, 18, 19, 20]
+// console.log(ans);//  [ 11, 12, 13, 14, 15,16, 17, 18, 19, 20]
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 //chaining :-
@@ -12,7 +12,7 @@ console.log(myNumber);//[41, 51,  61, 71,81, 91, 101]
 
 //-----------------------------------------------------------------------------------------------
 
-//Working of Reduse mathod:
+//Working of Reduse method:
 
 const array = [1,2,3];
 let initialvalue  = 0 ; 
@@ -22,7 +22,7 @@ const myTotal = array.reduce( function (acc,curr) {
     
     return acc+curr
 },0 ) 
-console.log(myTotal);
+// console.log(myTotal);
 
 //by arrow function:
 const sumwithinitial = array.reduce( (acc,currvalue) => acc+currvalue,initialvalue )

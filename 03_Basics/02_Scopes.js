@@ -6,7 +6,7 @@
 let a=5;// global scope
 const y = 6;//global scope
 
-//this is the block scope:- which is written in the {}
+//this peice of code is block scope:- which is written in the {}
  if(true){
     let y=8
     const a =3
@@ -35,7 +35,7 @@ if(true){
             const website  = "google.com"
            console.log(username+website);
         }
-       // console.log(wensite)// this shows :ReferenceError: website is not defined
+       // console.log(website)// this shows :ReferenceError: website is not defined
 }
 // console.log(username) //this shows error :ReferenceError: username is not defined cause this is from out of scope.
 

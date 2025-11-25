@@ -1,15 +1,15 @@
 //++++++++++++++++++++++++++++++++Filtet+++++++++++++++++++++++++++++++++++++++++++
 
-//As we know tha foreach loop do not return the values so for that we use the "filter"
+//As we know that foreach loop do not return the values so for that we use the "filter"
 
-const arr = [1,2,3,4,5,6,7,8,9,10]
-// const values = arr.filter( (num) =>num>5 );
-// console.log(values);//output:- [ 6, 7, 8, 9, 10 ]
+const arr = [1,2,3,4,5,6,7,8,9,10];
+// const value = arr.filter( (num) =>num>5 );
+// console.log(value);//output:- [ 6, 7, 8, 9, 10 ]
 
 const values = arr.filter( (num) => {
     return num>6
 } );
-// console.log(values);
+// console.log(values);//[ 7, 8, 9, 10 ]
 
 //-------------------------------------------------------------
 
@@ -24,7 +24,8 @@ arr.forEach( (num) =>{
 } )
 console.log(newNum);//[ 5, 6, 7, 8, 9, 10 ]
 //---------------------------------------------------------------------------------
-//copy the example from github:-
+
+//example :-
 
 const books = [
     { title: 'Book One', genre: 'Fiction', publish: 1981, edition: 2004 },

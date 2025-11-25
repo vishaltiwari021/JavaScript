@@ -9,7 +9,6 @@ function sayMyName(){
     console.log("hello vishal");
     console.log("hello vishal");
     console.log("hello vishal");
-    console.log("hello vishal");
 }
 // sayMyName()//this is the function execution.
 
@@ -64,7 +63,7 @@ const user ={
 function handle(anyObject){
     console.log(`Username is ${anyObject.name} and age ${anyObject.age}`)
 }
-// handle(user);
+// handle(user);//Username is vishal and age 45
 
 const newArray = [233,556,788,3345,345];
 
