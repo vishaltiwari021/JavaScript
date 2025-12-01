@@ -1,5 +1,5 @@
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//promise is an Object in js
+//promise is an Object in js representing the eventual completion or failure of an async operations.
 
 //Creation of  promises in JavaScript...... || promise m callback function likhna hota hai
 const promiseOne = new Promise(function(resolve,reject){

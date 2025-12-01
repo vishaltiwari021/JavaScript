@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Move Circle</title>
+    <style>
+      #circle {
+        width: 50px;
+        height: 50px;
+        background: blue;
+        border-radius: 50%;
+        position: relative;
+        left: 0;
+        transition: all 1s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Move Circle</h2>
+    <div id="circle"></div>
+    <button id="moveBtn">Move Circle</button>
+
+    <script>
+      const circle = document.getElementById("circle");
+      let moved = false;
+      document.getElementById("moveBtn").onclick = function () {
+        if (!moved) {
+          circle.style.left = "900px";
+          moved = true;
+        } else {
+          circle.style.left = "0px";
+          moved = false;
+        }
+      };
+    </script>
+  </body>
+</html>

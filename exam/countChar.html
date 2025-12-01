@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea id="textbox" maxlength="100"></textarea>
+    <p id="counter">character left :100</p>
+
+<script>
+let textbox = document.querySelector("#textbox");
+let counter = document.querySelector("#counter");
+let limit  =100;
+textbox.addEventListener("input",()=>{
+    let remainglimit  = limit - textbox.value.length;
+    counter.textContent = "character limit" += remainglimit;
+})
+</script>
+</body>
+</html>

@@ -1,3 +1,22 @@
-const car  = [{name:"totoyat",cost:9999},{name:"hariya",cost:54445}]
-const x  = car.reduce((a,b)=>a+b.cost,5);
-console.log(x); 
+// const a  = document.querySelector("#heading")
+
+// a.addEventListener("click",()=>{
+//     a.innerHTML="hihiihihihih";
+//     a.style.color="pink";
+//     a.style.backgroundColor = "black";
+// })
+//---------------------------------------------------------------
+const bulb = document.querySelector("#bulb");
+const btn = document.querySelector("button");
+let flag  =0 ;
+
+btn.addEventListener("click",function(){
+    if(flag==0){
+        bulb.style.backgroundColor="yellow";
+        flag = 1;
+    }
+    else{
+        bulb.style.backgroundColor="white";
+        flag = 0;
+    }
+})

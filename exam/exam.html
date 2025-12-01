@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h2>random joke</h2>
+   <input type="number" id="hee">
+   <button id="submit" onclick-="give()">submit</button>
+   <p id="msg"></p>
+   <p id="atempt"></p> 
+   <script>
+   let randomnumber  =Math.floor(Math.random()*100)+1;
+   let attmpt  = 5;
+
+   function give(){
+    let input = Number(document.getElementById("hee").value);
+    let mesg = document.getElementById("msg");
+
+    if(attmpt ===0) return;
+    if(input === randomnumber){
+        mesg.textContent = "cong";
+        attmpt=0;
+    }else{
+        attmpt--;
+        if(attmpt===0){
+            
+        }
+    }
+   }
+   </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="regform">
+        <input type="text" name="name" id="name">
+        <div id="nameerror"></div>
+        <input type="email" name="email" id="email">
+        <div id="emaolerror"></div>
+        <input type="password" name="password" maxlength="8" id="password">
+        <div id="passerror"></div>
+        <button id="submit"> submit</button>
+        <div id="success"></div>
+    </form>
+<script>
+
+    let form = document.querySelector("#regform");
+    form.addEventListener("submit",(e)=>{
+        e.preventDefault();
+    })
+
+    let name = document.getElementById("name").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let password = document.getElementById("password").value.trim();
+    
+    let nameerror = document.getElementById("nameerror");
+    let emaolerror = document.getElementById("emaolerror");
+    let passerror = document.getElementById("passerror");
+    let success = document.getElementById("success");
+
+    nameerror.textContent = "";
+    emaolerror.textContent = "";
+    passerror.textContent = "";
+    success.textContent = "";
+
+    let isvalid = true;
+
+    if (name === "") {
+    nameerror.textContent = "Name is required";
+    isValid = false;
+  }
+    if (email === "") {
+    emolerror.textContent = "Name is required";
+    isValid = false;
+  }
+    if (password === "") {
+    passerror.textContent = "Name is required";
+    isValid = false;
+  }
+
+   if (isvalid) {
+    successMsg.textContent = "Registration successful!";
+   }
+</script> 
+</body>
+</html>
